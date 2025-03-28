@@ -20,6 +20,23 @@ The model used is a custom convolutional autoencoder implemented in PyTorch. The
 - Trained for 30 epochs using the Adam optimizer.
 - Achieves low reconstruction error and high MS-SSIM scores.
 
+## Notebook Pipeline
+
+1. Load and preprocess `.fits` images
+2. Normalize and downsample to 128×128
+3. Train autoencoder using MSE loss
+4. Evaluate MS-SSIM after each epoch
+5. Visualize original vs. reconstructed images
+6. Access and inspect latent space
+7. Save trained model to `.pth` format
+
+## Model & Results Access
+**Autoencoder Model:** 
+  [autoencoder.pth](https://drive.google.com/file/d/1RFEkbIljpLW9wjGdYk191Woo9xdV_Hiv/view?usp=drive_link)
+  
+**Reconstructed Image Results:** 
+  [Reconstructed Images](https://drive.google.com/drive/folders/1q3gk3NJ4Z8Vt1epG6g4mqHIE3FZ4RX4H?usp=drive_link)
+
 ### Latent Space Access
 
 The latent vector can be extracted using:
